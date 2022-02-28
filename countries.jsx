@@ -17,7 +17,7 @@ class Countries extends Component {
                 {this.state.data.filter((val)=>{
             if(this.state.searchTerm==="")
                 return val
-                else if(val.name.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
+                else if(val.country.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
                     return val
           }).map((obj) => (
            <table>
